@@ -2,4 +2,12 @@ name: Run tests
 
 on:  
   schedule:
-    - cron: '0 08 * * *'  # every day at midnight
+    - cron: '*/5 * * * *'  # every day at midnight
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Covid-19 Notification on WA!
+        run: |
+          curl --request GET \
+          --url 'https://google-apis-serverless.vercel.app/api/covid-19' \
