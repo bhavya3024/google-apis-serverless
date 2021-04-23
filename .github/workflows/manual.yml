@@ -7,7 +7,7 @@ jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Covid-19 Notification on WA!
+      - name: Get Covid-19 Notification on WhatsApp!
         run: |
           curl --request GET \
-          --url 'https://google-apis-serverless.vercel.app/api/covid-19' \
+          --url 'https://google-apis-serverless.vercel.app/api/covid-19'
