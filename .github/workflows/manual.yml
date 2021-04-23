@@ -1,0 +1,5 @@
+name: Run tests
+
+on:  
+  schedule:
+    - cron: '0 08 * * *'  # every day at midnight
